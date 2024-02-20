@@ -1,8 +1,7 @@
 name: GitHub Actions Demo
 on:
-  push:
-    branches:
-     - develop
+  schedule:
+    - cron: '05 8 * * *'  # This will run the workflow at 8:05 AM UTC (1:35 PM IST) every day
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
